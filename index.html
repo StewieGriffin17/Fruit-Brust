@@ -20,6 +20,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary': '#F85559',
+                'secondary': '#12121299'
               }
             }
           }
@@ -32,9 +34,47 @@
       }
     </style>
 </head>
-<body>
-  <header>
-
+<body class="font-lato">
+  <header class="container mx-auto">
+    <!-- navbar -->
+    <nav class="lg:bg-primary rounded-[600px] lg:px-[50px] lg:py-[30px] mt-[20px] lg:mt-[50px]">
+      <div class="navbar">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white text-[18px] font-medium">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[18px] font-medium text-primary">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <!-- Fruit Brust -->
+        <div class="navbar-center">
+          <img src="images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case text-[40px] text-primary lg:text-white font-bold">Fruit Brust</a>
+        </div>
+        <!-- Search -->
+        <div class="navbar-end hidden md:flex">
+          <input type="text" placeholder="Search Here" class="input w-full max-w-xs rounded-[50px] bg-primary lg:bg-white text-secondary text-base font-normal"/>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute mr-[18px]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <!-- slider -->
+    
   </header>
   <main>
 
